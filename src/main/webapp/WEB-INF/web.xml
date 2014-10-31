@@ -75,22 +75,17 @@
 	<welcome-file-list>
 		<welcome-file>index.jsp</welcome-file>
 	</welcome-file-list>
+	
+	
+	<!-- 
+	指明了配置文件的文件名，不使用默认配置文件名，而使用springMVC.xml配置文件。
+	其中<param-value>**.xml</param-value> 这里可以使用多种写法
+	1、不写,使用默认值:/WEB-INF/<servlet-name>-servlet.xml
+	2、<param-value>/WEB-INF/classes/springMVC.xml</param-value>
+	3、<param-value>classpath*:springMVC-mvc.xml</param-value>
+	4、多个值用逗号分隔
+	 -->
 
-	<!-- 错误跳转页面 -->
-	<error-page>
-		<!-- 路径不正确 -->
-		<error-code>404</error-code>
-		<location>/WEB-INF/errorpage/404.jsp</location>
-	</error-page>
-	<error-page>
-		<!-- 没有访问权限，访问被禁止 -->
-		<error-code>405</error-code>
-		<location>/WEB-INF/errorpage/405.jsp</location>
-	</error-page>
-	<error-page>
-		<!-- 内部错误 -->
-		<error-code>500</error-code>
-		<location>/WEB-INF/errorpage/500.jsp</location>
-	</error-page>
+
 </web-app>
 
