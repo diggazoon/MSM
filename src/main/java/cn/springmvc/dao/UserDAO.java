@@ -15,6 +15,4 @@ public interface UserDAO {
 	
 	//@Select("SELECT * FROM blog WHERE id = #{id}") 
 	//Blog selectBlog(int id);
-	
-	
 }
