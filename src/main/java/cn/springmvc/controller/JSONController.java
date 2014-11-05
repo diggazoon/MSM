@@ -6,18 +6,19 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import cn.springmvc.model.Shop;
+import cn.springmvc.common.EncodingTool;
+import cn.springmvc.model.Book;
 
 @Controller
 @RequestMapping("/")
 public class JSONController {
 	
-	@RequestMapping(value="json", method = RequestMethod.GET)
-	public @ResponseBody Shop getShopInJSON(@RequestParam String name) {
+	@RequestMapping(value="json", produces = {"application/json;charset=UTF-8"}, method = RequestMethod.GET)
+	public @ResponseBody Book getShopInJSON(@RequestParam String name) {
  
-		Shop shop = new Shop();
-		shop.setName(name);
-		shop.setStaffName(new String[]{"mkyong1", "mkyong2"});
+		Book shop = new Book();
+		shop.setName(EncodingTool.encodeStr(name));
+		shop.setStaffName(new String[]{shop.getName(), "holleymetering"});
  
 		return shop;
  

@@ -1,6 +1,6 @@
 package cn.springmvc.model;
 
-public class Shop {
+public class Book {
 	private String name;
 	
 	public String getName() {
