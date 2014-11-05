@@ -1,7 +1,8 @@
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\dao\UserDAO.java
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\controller\FormAnnotationControl.java
-G:\javaworkspace\springmvc\src\main\java\cn\springmvc\service\impl\UserServiceImpl.java
+G:\javaworkspace\springmvc\src\main\java\cn\springmvc\Inteceptor\MyInteceptor.java
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\model\User.java
+G:\javaworkspace\springmvc\src\main\java\cn\springmvc\service\impl\UserServiceImpl.java
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\service\UserService.java
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\controller\AnnotationControl.java
 G:\javaworkspace\springmvc\src\main\java\cn\springmvc\controller\SimpleAnnotationControl.java

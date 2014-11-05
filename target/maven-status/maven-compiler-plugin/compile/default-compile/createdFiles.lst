@@ -1,5 +1,0 @@
-cn\springmvc\service\UserService.class
-cn\springmvc\controller\MainController.class
-cn\springmvc\service\impl\UserServiceImpl.class
-cn\springmvc\model\User.class
-cn\springmvc\dao\UserDAO.class
