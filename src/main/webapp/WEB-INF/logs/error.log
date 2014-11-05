@@ -587,3 +587,5 @@ Caused by: java.lang.Error: Unresolved compilation problems:
 2014-11-05 10:05:34 [ main:1045 ] - [ ERROR ] maxIdle is deprecated
 2014-11-05 10:06:21 [ main:1169 ] - [ ERROR ] maxIdle is deprecated
 2014-11-05 10:07:04 [ main:1541 ] - [ ERROR ] maxIdle is deprecated
+2014-11-05 11:10:35 [ main:4912 ] - [ ERROR ] maxIdle is deprecated
+2014-11-05 13:25:26 [ main:1228 ] - [ ERROR ] maxIdle is deprecated

@@ -99,6 +99,13 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.29</version>
 		</dependency>
+		
+		<!-- 添加oracle jdbc driver -->  
+		<dependency>    
+		    <groupId>com.oracle</groupId> 
+		    <artifactId>ojdbc14</artifactId> 
+		    <version>10.2.0.1.0</version> 
+		</dependency>
 		<!-- junit测试包 -->
 		<dependency>
 			<groupId>junit</groupId>
