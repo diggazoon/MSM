@@ -24,11 +24,12 @@ public class WebInteceptor implements WebRequestInterceptor {
 	@Override
 	public void postHandle(WebRequest request, ModelMap map) throws Exception {
 		// TODO Auto-generated method stub
-		
+		/*
 		for (String key:map.keySet())  
             System.out.println(key + "-------------------------");;  
         map.put("name3", "value3");  
         map.put("name1", "name1"); 
+        */
 
 	}
 
