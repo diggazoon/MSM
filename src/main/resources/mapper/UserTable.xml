@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="cn.springmvc.dao.UserMapper">
+
+	<resultMap id="userMap" type="UserTable">
+		<id property="userId" column="userId"></id>
+		<id property="userName" column="userName"></id>
+		<id property="password" column="password"></id>
+	</resultMap>
+
+	<select id="getUser" parameterType="UserTable" resultMap="userMap">
+		select userId,userName from userTable where userId=#{userId}
+	</select>
+	
+	<insert id="addUser" parameterType="UserTable">
+		insert into userTable(userName,password) values (#{userName},#{password})
+	</insert>
+
+	<update id="updateUser" parameterType="UserTable">
+		update userTable set userName=#{userName},password=#{password} where userId=#{userId}
+	</update>
+</mapper>

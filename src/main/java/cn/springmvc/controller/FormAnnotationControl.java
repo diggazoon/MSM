@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.view.RedirectView;
 
+import cn.springmvc.common.EncodingTool;
 import cn.springmvc.model.AdminTable;
 import cn.springmvc.model.User;
 import cn.springmvc.service.AdminService;
@@ -43,9 +44,11 @@ public class FormAnnotationControl {
 	@RequestMapping("login")
 	public ModelAndView login(@ModelAttribute User user) {
 		
-		logger.error("name = "+user.getUsername());
+		String name = user.getUsername().trim();
 		
-		AdminTable admin = adminService.getUserPassword(user.getUsername());
+		logger.error("name = "+name);
+		
+		AdminTable admin = adminService.getUserPassword(name);
 		
 		ModelAndView mav = new ModelAndView(new RedirectView("manage.do"));
 		

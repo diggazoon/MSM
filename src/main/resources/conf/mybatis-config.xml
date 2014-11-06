@@ -21,6 +21,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 	<typeAliases>
 		<typeAlias alias="User" type="cn.springmvc.model.User" />
 		<typeAlias alias="AdminTable" type="cn.springmvc.model.AdminTable" />
+		<typeAlias alias="UserTable" type="cn.springmvc.model.UserTable"/>
 	</typeAliases>
 
 	<!-- 映射map -->
